@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HannahKarlsson-NET22\\Documents\\GitHub\\HelloWorld\\MyFirstApp\\MyFirstApp\\MyFirstApp\\MyFirstApp.csproj",
+      "projectUniqueName": "C:\\Users\\HannahKarlsson-NET22\\Documents\\GitHub\\HelloWorld\\MyFirstApp\\MyFirstApp\\MyFirstApp.csproj",
       "projectName": "MyFirstApp",
-      "projectPath": "C:\\Users\\HannahKarlsson-NET22\\Documents\\GitHub\\HelloWorld\\MyFirstApp\\MyFirstApp\\MyFirstApp\\MyFirstApp.csproj",
+      "projectPath": "C:\\Users\\HannahKarlsson-NET22\\Documents\\GitHub\\HelloWorld\\MyFirstApp\\MyFirstApp\\MyFirstApp.csproj",
       "packagesPath": "C:\\Users\\HannahKarlsson-NET22\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HannahKarlsson-NET22\\Documents\\GitHub\\HelloWorld\\MyFirstApp\\MyFirstApp\\MyFirstApp\\obj\\",
+      "outputPath": "C:\\Users\\HannahKarlsson-NET22\\Documents\\GitHub\\HelloWorld\\MyFirstApp\\MyFirstApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
