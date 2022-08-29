@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7xVhC/zkctW3YIJw1MktyH/VARdFRvRfRH0fsVrz+4hrTOPfoRe6qJ39G+dnPBwxXb/LvKQbtKMNHpWsbsj6pw==",
+  "dgSpecHash": "p7kvE6CSfEr03rG3ASwqK1YVTxOQT5Qk2ehy6Xf+LyKie2jMYBe0pgHL4Dm9/4DocsMGjwx3elJBDGtrBMjJpg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HannahKarlsson-NET22\\Documents\\GitHub\\HelloWorld\\MyFirstApp\\MyFirstApp.csproj",
+  "projectFilePath": "C:\\Users\\HannahKarlsson-NET22\\Documents\\GitHub\\HelloWorld\\MyFirstApp\\MyFirstApp\\MyFirstApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
