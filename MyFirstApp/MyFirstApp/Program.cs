@@ -1,12 +1,63 @@
 ﻿//Fråga användaren: "Vad är ditt namn?"
 Console.WriteLine("Vad är ditt namn?");
+string consoleOutput;
 
 //Hämta namnet från vad användaren skriver!
 var name = Console.ReadLine();
-var frukost = true;
-var age = 20;
+consoleOutput = $"Hej! Ditt namn är {name}";
 
-//Skriv ut "Hej! Ditt namn är (Vad användaren skrev in)"
-Console.WriteLine($"Hej! Ditt namn är {name}, du är {age} år och..");
-if(frukost) { Console.WriteLine("..du hade frukost!"); }
-else { Console.WriteLine("..du hade inte frukost!"); }
+//Fråga användaren vad deras ålder är!
+var age = 0;
+var hasAge = false; //Har vi faktiskt fått åldern eller ljuger användaren för oss?
+while(!hasAge) { 
+    Console.WriteLine("Vad är din ålder?");
+    //Är det ett nummer? Om ja, himla bra. Om ej, jäkla användare!
+    var ageString = Console.ReadLine();
+    bool isNumber = int.TryParse(ageString, out age); 
+    switch(isNumber)
+    {
+        case true: 
+            hasAge = true; 
+            break;
+        case false:
+            Console.WriteLine($"Vad du skrev är inte ett nummer. Du skrev: {ageString}");
+            break;
+    }
+}
+consoleOutput += $" och du är {age} år";
+
+//Fråga användaren om de åt frukost
+var frukost = false; 
+var hasFrukost = false; //Har vi faktiskt fått frukost "input"?
+while (!hasFrukost)
+{
+    Console.WriteLine("Har du ätit frukost? (Y/N)");
+    //Är det ett nummer? Om ja, himla bra. Om ej, jäkla användare!
+    var ageString = Console.ReadLine();
+    char ageChar = ageString.ToLower()[0];
+    switch (ageChar)
+    {
+        case 'y':
+            frukost = true;
+            hasFrukost = true;
+            break;
+        case 'n':
+            frukost = false;
+            hasFrukost = true;
+            break;
+        default:
+            Console.WriteLine($"Du behöver skriva Y eller N för YES eller NO. Du skrev {ageString}");
+            break;
+    }
+}
+switch(frukost)
+{
+    case true:
+        consoleOutput += ". Idag hade du frukost, gött!";
+        break;
+    case false:
+        consoleOutput += ". Idag hade du inte frukost, hoppas du klarar dig ändå!";
+        break;
+}
+//Skriv ut consoleOutput
+Console.WriteLine(consoleOutput);
