@@ -28,7 +28,7 @@ consoleOutput += $" och du är {age} år";
 
 //Fråga användaren om de åt frukost
 var frukost = false; 
-var hasFrukost = false; //Har vi faktiskt fått frukost "input"?
+var hasFrukost = false; //Har vi faktiskt fått frukost "inputen"?
 while (!hasFrukost)
 {
     Console.WriteLine("Har du ätit frukost? (Y/N)");
@@ -41,12 +41,16 @@ while (!hasFrukost)
             frukost = true;
             hasFrukost = true;
             break;
+        case 'j':
+            frukost = true;
+            hasFrukost = true;
+            break;
         case 'n':
             frukost = false;
             hasFrukost = true;
             break;
         default:
-            Console.WriteLine($"Du behöver skriva Y eller N för YES eller NO. Du skrev {ageString}");
+            Console.WriteLine($"Du behöver skriva Y/J eller N för YES/JA eller NO/NEJ. Du skrev {ageString}");
             break;
     }
 }
